@@ -19,7 +19,7 @@ module.exports = {
   production:{
     client: 'pg',
     useNullAsDefault: true,
-    connection: process.env.DATABASE_URL, //give value to url with step 10 inside .env, uri is there and extra stuff in file ?SSL = true
+    connection: process.env.DATABASE_URL,
     migrations: {
       directory: "./data/migrations"
     },
